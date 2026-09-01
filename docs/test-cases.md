@@ -2,7 +2,7 @@
 
 | ID | Title | Requirement | Preconditions | Steps | Expected | Priority | Type | Result / Note |
 |---|---|---|---|---|---|---|---|---|
-| TC-01 | Add valid score | add_score accepts valid numeric scores | Student exists | Create student and call add_score(85). | Score 85 is added successfully. | High | Positive | FAIL — add_score() is not implemented in the current code. |
+| TC-01 | Add valid score | add_score accepts valid numeric scores | Student exists | Create student and call add_score(85). | Score 85 is added successfully. | High | Positive |FAIL — add_score() is not implemented in the current code. GitHub Issue #1.|
 | TC-02 | Reject negative score | add_score rejects negative input | Student exists | Create student and call add_score(-10). | Negative score is rejected. | High | Negative | BLOCKED — add_score() is not implemented, so rejection cannot be verified. |
 | TC-03 | Reject non-numeric score | add_score rejects non-numeric input | Student exists | Create student and call add_score("abc"). | Non-numeric score is rejected. | High | Negative | BLOCKED — add_score() is not implemented, so rejection cannot be verified. |
 | TC-04 | Calculate average with scores | average() returns average of existing scores | Student has scores 70, 80, 90 | Add scores and call average(). | Average returned is 80. | High | Positive | BLOCKED — average() is not implemented. |
